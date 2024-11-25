@@ -13,6 +13,7 @@ with open ("frames.dat.txt",'r') as f:
             y.append(float(s[2*i+1].split()[a]))
         qw=str(i+1)
         print(qw)
+        plt.figure(figsize=(6,4))
         plt.plot(x,y)
         plt.ylim(-15,15)
         plt.grid()
