@@ -14,6 +14,7 @@ with open ("frames.dat.txt",'r') as f:
         qw=str(i+1)
         print(qw)
         plt.plot(x,y)
+        plt.ylim(-15,15)
         plt.grid()
         plt.savefig(qw+".png")
         plt.show()
